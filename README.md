@@ -26,3 +26,13 @@ if (REG_PM_CAUSE == PM_RCAUSE_POR){
   Serial.println("Normal power on reset");
 }
 ```
+
+The register `RCAUSE` bits are as follows;
+1 = PM_RCAUSE_POR
+2 = PM_RCAUSE_BOD12
+4 = PM_RCAUSE_BOD33
+8 = N/A always zero
+16 = PM_RCAUSE_EXT
+32 = PM_RCAUSE_WDT
+64 = PM_RCAUSE_SYST
+128 = N/A always zero
